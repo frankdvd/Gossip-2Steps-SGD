@@ -1,5 +1,7 @@
 # cs267-final-project
 
+Decentralized ML training using gossip 2 steps communication
+
 # 1. Setup Envionment(local laptop only)
 
 *You have to skip this step if you run the code on bridge-2*
