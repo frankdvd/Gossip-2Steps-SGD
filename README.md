@@ -113,10 +113,15 @@ Decentralized ML training using gossip 2 steps communication
 The default model used in our scripts is ResNet18. However, it is possible for users to use resnet50 as well.
 To use resnet50, just add argument `--resnet50`. for example:
     On the first node run
+    
     ```
     python -m torch.distributed.launch --nproc_per_node=4 --nnodes=2 --node_rank=0 --master_addr="10.8.10.250" --master_port=1235 ./resnet-cifar10-gossip-avg.py --nproc_per_node=4 --node_rank=0 --resnet50
     ```
+    
+    
     on the second node run
+    
+    
     ```
     python -m torch.distributed.launch --nproc_per_node=4 --nnodes=2 --node_rank=1 --master_addr="10.8.10.250" --master_port=1235 ./resnet-cifar10-gossip-avg.py --nproc_per_node=4 --node_rank=1 --resnet50
     ```
