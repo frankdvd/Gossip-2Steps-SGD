@@ -1,0 +1,6 @@
+# usage
+# pip install -r requirements.txt
+
+-f https://download.pytorch.org/whl/torch_stable.html 
+torch>=1.7.0
+torchvision>=0.8.1
